@@ -1,0 +1,55 @@
+@include mobile {
+.whatwedo {
+    display: none;
+}
+}
+
+@include tablet {
+.whatwedo {
+    display: none;
+}
+}
+
+@include desktop {
+.whatwedo {
+    display: block;
+    padding-top: 0;
+
+    &__header {
+        text-align: center;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        color: var(--primary-color);
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 30px;
+        position: relative;
+    }
+
+    &__overlay {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+        width: 370px;
+        height: 70px;
+        background: var(--overlay-color-two);
+    }
+
+    &__text {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1, 14;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--fourth-color);
+    }
+}
+}

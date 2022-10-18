@@ -1,0 +1,105 @@
+@include mobile {
+    .header {
+
+    &__mobmodal.is-open {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    &__mobmodal {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 480px;
+        height: 796px;
+        padding: 48px 40px;
+        background-color: var(--fourth-color);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 
+                    0px 2px 4px rgba(0, 0, 0, 0.08), 
+                    0px 1px 3px rgba(0, 0, 0, 0.16);
+        opacity: 1;
+        transition: opacity 250ms var(--time-distribution-function);
+    }
+
+    &__mobmodal-sitenav-menu {
+        margin-bottom: 302px;
+    }
+    
+    &__mobmodal-sitenav-menu li:not(:last-child) {
+        padding-bottom: 32px;
+    }
+
+    &__mobmodal-sitenav {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+        color: var(--primary-color);
+    }
+
+    &__mobmodal-currentpage {
+        color: var(--hover-color);
+    }
+
+    &__mobmodal-contacts li:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    
+    &__mobmodal-phon {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+        color: var(--hover-color);
+    }
+
+    &__mobmodal-header-mail {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.17x;
+        letter-spacing: 0.02em;
+        color: var(--secondary-color);
+    }
+
+    &__mobmodal-soclink-menu {
+        display: flex;
+        gap: 10px;   
+        margin-top: 64px;
+    }
+
+    &__mobmodal-soclink-menu a {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: var(--hover-color);
+    }
+
+    &__mobmodal-close-button {
+            display: flex;
+                position: absolute;
+                top: 10px;
+                right: 15px;
+                width: 40px;
+                height: 40px;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--fourth-color);
+                border: none;
+            }
+    }
+}
+@include tablet {
+    .header {
+    &__mobmodal {
+        display: none;
+    }
+}
+}
+@include desktop {
+    .header {
+    &__mobmodal {
+        display: none;
+    }
+}
+}

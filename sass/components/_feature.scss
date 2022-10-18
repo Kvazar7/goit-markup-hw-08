@@ -1,0 +1,103 @@
+@include mobile {
+.features {
+    li:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    
+    &__icon {
+        display: flex;
+        width: auto;
+        height: 120px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        background-color: var(--secondary-background);
+    }
+    
+    &__feature {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--primary-color);
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        line-height: 1.71;
+    }
+}
+}
+
+@include tablet {
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    &__icon {
+    display: flex;
+    width: 354px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-color: var(--secondary-background);
+}
+
+        &__feature {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        &__text {
+            line-height: 1.71;
+            width: 354px;
+        }
+
+}
+}
+
+@include desktop {
+.features {
+    display: flex;
+        flex-wrap: nowrap;
+        gap: 30px;
+
+    &__icon {
+        display: flex;
+        width: 270px;
+        height: 120px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        background-color: var(--secondary-background);
+    }
+
+        &__feature {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        &__text {
+            line-height: 1.71;
+            width: 270px;
+        }
+    }
+}
