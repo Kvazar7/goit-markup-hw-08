@@ -2,20 +2,20 @@
 .regular-customers {
 
     &__header {
-            text-align: center;
-            font-weight: 700;
-            font-size: 28px;
-            line-height: 1.18x;
-            letter-spacing: 0.03em;
-            color: var(--primary-color);
-            margin-bottom: 30px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.18x;
+        letter-spacing: 0.03em;
+        color: var(--primary-color);
+        margin-bottom: 30px;
     }
 
         &__list {
-        display: flex;
+        display: inline-flex;
         flex-wrap: wrap;
         gap: 30px;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     &__link {

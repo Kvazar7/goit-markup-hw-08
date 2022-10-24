@@ -12,17 +12,22 @@
         margin-bottom: 30px;
     }
 
-    &__teamphoto li:not(:last-child) {
+    &__teamphoto > li {
+        margin: 0 auto 0 auto;
+    }
+
+    &__teamphoto > li:not(:last-child) {
         margin-bottom: 30px;
     }
     
     &__list {
         background-color: var(--fourth-color);
         box-shadow: 0 1px 3px 0 var(--shadow-color-two),
-                0 1px 1px 0 var(--shadow-color-three),
-                0 2px 1px 0 var(--shadow-color-four);
+                    0 1px 1px 0 var(--shadow-color-three),
+                    0 2px 1px 0 var(--shadow-color-four);
         border-bottom-right-radius: 4px;
         border-bottom-left-radius: 4px;
+        max-width: 450px;
     }
 
     &__teammember-description {

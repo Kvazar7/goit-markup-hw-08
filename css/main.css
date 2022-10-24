@@ -464,7 +464,7 @@ body {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
-    max-width: 480px;
+    width: auto;
     height: auto;
     margin: 0 auto;
   }
@@ -775,7 +775,10 @@ body {
     color: var(--primary-color);
     margin-bottom: 30px;
   }
-  .ourteam__teamphoto li:not(:last-child) {
+  .ourteam__teamphoto > li {
+    margin: 0 auto 0 auto;
+  }
+  .ourteam__teamphoto > li:not(:last-child) {
     margin-bottom: 30px;
   }
   .ourteam__list {
@@ -784,6 +787,7 @@ body {
             box-shadow: 0 1px 3px 0 var(--shadow-color-two), 0 1px 1px 0 var(--shadow-color-three), 0 2px 1px 0 var(--shadow-color-four);
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
+    max-width: 450px;
   }
   .ourteam__teammember-description {
     padding-top: 30px;
@@ -1011,15 +1015,15 @@ body {
     margin-bottom: 30px;
   }
   .regular-customers__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 30px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .regular-customers__link {
     display: -webkit-box;
@@ -1149,14 +1153,9 @@ body {
   .footer__container {
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: center;
   }
   .footer__logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -1171,13 +1170,6 @@ body {
     color: var(--fourth-color);
   }
   .footer__contacts-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
     margin: 20px auto 60px auto;
   }
   .footer__list:not(:last-child) {
@@ -1204,15 +1196,9 @@ body {
     color: var(--hover-color);
   }
   .footer__join {
-    margin-top: 60px;
+    margin-bottom: 60px;
   }
   .footer__join-in {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -1256,13 +1242,9 @@ body {
     fill: var(--fourth-color);
   }
   .footer__mail input {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    max-width: 450px;
     width: 100%;
     height: 50px;
-    margin-right: auto;
-    margin-left: auto;
     padding: 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -1322,17 +1304,12 @@ body {
             align-items: baseline;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    text-align: center;
   }
   .footer__subscribe {
     margin-top: 60px;
   }
   .footer__logo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -1347,13 +1324,6 @@ body {
     color: var(--fourth-color);
   }
   .footer__contacts-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
     margin: 20px auto 0 auto;
   }
   .footer__list:not(:last-child) {
@@ -1380,19 +1350,13 @@ body {
     color: var(--hover-color);
   }
   .footer__join-in {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--fourth-color);
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
   .footer__socials-links {
     display: -webkit-box;
@@ -1479,8 +1443,8 @@ body {
   .footer {
     background-color: var(--footer-background);
   }
-  .footer__container div:not(:last-child) {
-    padding-bottom: 0;
+  .footer__container {
+    text-align: left;
   }
   .footer__logo {
     font-family: "Raleway", sans-serif;
@@ -1498,16 +1462,6 @@ body {
   }
   .footer__logostudio {
     color: var(--fourth-color);
-  }
-  .footer__contacts-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: left;
-    margin: 20px auto 0 auto;
   }
   .footer__list:not(:last-child) {
     margin-bottom: 9px;
@@ -1533,12 +1487,6 @@ body {
     color: var(--hover-color);
   }
   .footer__join-in {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -1546,24 +1494,9 @@ body {
     text-transform: uppercase;
     color: var(--fourth-color);
   }
-  .footer__socials-links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 10px;
-  }
   .footer__sociallink {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     width: 44px;
     height: 44px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     border-radius: 50%;
     background-color: var(--footer-color-two);
     -webkit-transition: background-color 250ms var(--time-distribution-function);
@@ -1601,6 +1534,9 @@ body {
   }
   .footer__mail input:focus {
     color: var(--fourth-color);
+  }
+  .footer__subscribe {
+    margin: 0;
   }
   .footer__subscribe-button {
     display: -webkit-box;
