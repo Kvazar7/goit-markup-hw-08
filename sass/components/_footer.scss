@@ -61,6 +61,10 @@
         color: var(--hover-color)
     }
     
+    &__join {
+        margin-top: 60px;
+    }
+
     &__join-in {
         display: flex;
         justify-content: center;
@@ -70,7 +74,6 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--fourth-color);
-        margin-top: 60px;
         margin-bottom: 20px;
     }
         
@@ -162,8 +165,8 @@
             justify-content: space-around;
         }
 
-        &__container div:not(:last-child) {
-            padding-bottom: 60px;
+        &__subscribe {
+            margin-top: 60px;
         }
 
         &__logo {
@@ -310,9 +313,8 @@
     .footer {
         background-color: var(--footer-background);
 
-        &__container {
-            padding-top: 60px;
-            padding-bottom: 60px;
+        &__container div:not(:last-child) {
+            padding-bottom: 0;
         }
 
         &__logo {
@@ -321,11 +323,12 @@
             font-size: 26px;
             line-height: 1.19;
             letter-spacing: 0.03em;
+            justify-content: left;
             color: var(--third-color);
         }
 
         &__logoweb {
-            color: var(--hover-color)
+            color: var(--hover-color);
         }
 
         &__logostudio {
@@ -336,7 +339,7 @@
             display: flex;
             justify-content: center;
             text-align: left;
-            margin: 20px auto 60px auto;
+            margin: 20px auto 0 auto;
         }
 
         &__list:not(:last-child) {
@@ -369,26 +372,14 @@
 
         &__join-in {
             display: flex;
-            justify-content: center;
+            justify-content: left;
             font-weight: 700;
             font-size: 14px;
             line-height: 1.14;
             letter-spacing: 0.03em;
             text-transform: uppercase;
             color: var(--fourth-color);
-            margin-top: 60px;
-            margin-bottom: 20px;
         }
-
-        // &__join-in {
-        //     font-weight: 700;
-        //     font-size: 14px;
-        //     line-height: 1.14;
-        //     letter-spacing: 0.03em;
-        //     text-transform: uppercase;
-        //     color: var(--fourth-color);
-        //     margin-bottom: 20px;
-        // }
 
         &__socials-links {
             display: flex;
